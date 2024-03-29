@@ -1,0 +1,27 @@
+{
+  "name": "modelo-previsao",
+  "description": "Ponto de extremidade para previsão usando modelo de aprendizado de máquina",
+  "computeType": "ACI",
+  "computeName": "nome-da-instancia",
+  "resourceGroupName": "nome-do-grupo-de-recursos",
+  "appInsightsEnabled": true,
+  "authEnabled": false,
+  "sslEnabled": false,
+  "containerInstance": {
+    "cpuCores": 1,
+    "memoryGb": 1.5
+  },
+  "autoscaleEnabled": null,
+  "replicas": 1,
+  "exposedPorts": null,
+  "docker": {
+    "baseImage": "mcr.microsoft.com/azureml/o16n-sample-user-base/ubuntu-miniconda",
+    "baseDockerfile": null,
+    "baseImageRegistry": {
+      "address": null,
+      "username": null,
+      "password": null
+    }
+  },
+  "storageAccount": null
+}
